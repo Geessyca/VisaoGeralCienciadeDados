@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>index.utf8</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.7/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/rutgers.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/shinobi.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+#VISÃO GERAL DA CIÊNCIA DE DADOS
+&lt;/br&gt;
+[Gessyca Moreira](https://github.com/Geessyca/-studyfiles)
+&lt;/br&gt;&lt;/br&gt;
+.center[[CDEC](https://bendeivide.github.io/cdec/)]
+---
+class: left, top
+#Fundamentos da ciência de dados
+
+--
+.center[De uma forma totalmente contrária ao que muitas pessoas pensam ao escutar este termo pela primeira vez, a ciência de dados vai muito além de linha de códigos, em geral sua base é formada por três grandes pilares de conhecimentos, sendo eles a estatística, computação e nossa perspectiva humana.]
+&lt;/br&gt;
+--
+![](Fundamentos da ciência de dados.png)
+---
+class: left, top
+#Objetivo da ciência de dados
+&lt;/br&gt;
+--
+.left[Usando esses fundamentos, a ciência de dados, visa a solução de problemas em diversos setores e pode gerar os mais diversos resultados, como:]
+&lt;/br&gt;
+--
+.left[O produto que venderá mais]
+&lt;/br&gt;
+.left[Qual é os filmes mais recomendados para cada pessoa]
+&lt;/br&gt;
+.left[Se o cliente será inadimplente ou não]
+&lt;/br&gt;
+.left[Previsão de falhas mecânicas]
+---
+class: left, top
+#Aplicações da ciência de dados
+&lt;/br&gt;
+--
+![](aplicacao de ciencia de dados.png)
+
+---
+class: left, top
+#Métodos de aprendizagem
+&lt;/br&gt;
+##Statistical Learning
+
+No aprendizado com estatística, encontramos duas de técnicas o aprendizado supervisionado e não supervisionado
+
+--
+.pull-left[###Aprendizado supervisionado
+Obtém previsões e classificações através das variáveis preditoras.]
+.pull-right[###Aprendizado não supervisionado
+Obtém descrição de associações e padrões entre as variáveis.]
+
+---
+class: left, top
+#Métodos de aprendizagem
+&lt;/br&gt;
+##Machine Learning
+
+No aprendizado com máquina, o objetivo é treinar o computador para analisar automaticamente um conjunto de dados.
+
+--
+.pull-left[###Dados de treinamentos
+Dados que são aplicados a vários modelos.]
+.pull-right[###Dados de validação
+Dados que servem para validar qual modelo melhor se adequa ao resultado esperado.]
+
+---
+class: left, top
+#Etapas básicas da ciência de dados
+&lt;/br&gt;
+&lt;/br&gt;
+--
+![](ETAPAS.png)
+
+---
+class: center, middle
+#Obrigada!
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
